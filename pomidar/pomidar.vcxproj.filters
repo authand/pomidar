@@ -1,0 +1,136 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+
+  <!-- FILTER DEFINITIONS -->
+  <ItemGroup>
+    <Filter Include="src">
+      <UniqueIdentifier>{A1E1A1A1-1111-1111-1111-111111111111}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\core">
+      <UniqueIdentifier>{A1E1A1A1-2222-2222-2222-222222222222}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\game">
+      <UniqueIdentifier>{A1E1A1A1-3333-3333-3333-333333333333}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\ui">
+      <UniqueIdentifier>{A1E1A1A1-4444-4444-4444-444444444444}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\win">
+      <UniqueIdentifier>{A1E1A1A1-5555-5555-5555-555555555555}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ext">
+      <UniqueIdentifier>{B2E2B2B2-1111-1111-1111-111111111111}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ext\imgui">
+      <UniqueIdentifier>{B2E2B2B2-2222-2222-2222-222222222222}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ext\imgui\backends">
+      <UniqueIdentifier>{B2E2B2B2-3333-3333-3333-333333333333}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+
+  <!-- SOURCE FILES -->
+  <ItemGroup>
+    <ClCompile Include="src\main.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+
+    <ClCompile Include="src\core\app.cpp">
+      <Filter>src\core</Filter>
+    </ClCompile>
+    <ClCompile Include="src\core\graphics.cpp">
+      <Filter>src\core</Filter>
+    </ClCompile>
+
+    <ClCompile Include="src\game\entity.cpp">
+      <Filter>src\game</Filter>
+    </ClCompile>
+    <ClCompile Include="src\game\reader.cpp">
+      <Filter>src\game</Filter>
+    </ClCompile>
+
+    <ClCompile Include="src\ui\radar.cpp">
+      <Filter>src\ui</Filter>
+    </ClCompile>
+    <ClCompile Include="src\ui\texture_loader.cpp">
+      <Filter>src\ui</Filter>
+    </ClCompile>
+
+    <ClCompile Include="src\win\processutil.cpp">
+      <Filter>src\win</Filter>
+    </ClCompile>
+
+    <ClCompile Include="ext\imgui\imgui.cpp">
+      <Filter>ext\imgui</Filter>
+    </ClCompile>
+    <ClCompile Include="ext\imgui\imgui_draw.cpp">
+      <Filter>ext\imgui</Filter>
+    </ClCompile>
+    <ClCompile Include="ext\imgui\imgui_tables.cpp">
+      <Filter>ext\imgui</Filter>
+    </ClCompile>
+    <ClCompile Include="ext\imgui\imgui_widgets.cpp">
+      <Filter>ext\imgui</Filter>
+    </ClCompile>
+
+    <ClCompile Include="ext\imgui\backends\imgui_impl_dx11.cpp">
+      <Filter>ext\imgui\backends</Filter>
+    </ClCompile>
+    <ClCompile Include="ext\imgui\backends\imgui_impl_win32.cpp">
+      <Filter>ext\imgui\backends</Filter>
+    </ClCompile>
+  </ItemGroup>
+
+  <!-- HEADER FILES -->
+  <ItemGroup>
+    <ClInclude Include="src\core\app.h">
+      <Filter>src\core</Filter>
+    </ClInclude>
+    <ClInclude Include="src\core\config.h">
+      <Filter>src\core</Filter>
+    </ClInclude>
+    <ClInclude Include="src\core\graphics.h">
+      <Filter>src\core</Filter>
+    </ClInclude>
+    <ClInclude Include="src\core\types.h">
+      <Filter>src\core</Filter>
+    </ClInclude>
+    <ClInclude Include="src\core\offsets.h">
+      <Filter>src\core</Filter>
+    </ClInclude>
+
+    <ClInclude Include="src\game\entity.h">
+      <Filter>src\game</Filter>
+    </ClInclude>
+    <ClInclude Include="src\game\reader.h">
+      <Filter>src\game</Filter>
+    </ClInclude>
+
+    <ClInclude Include="src\ui\radar.h">
+      <Filter>src\ui</Filter>
+    </ClInclude>
+    <ClInclude Include="src\ui\texture_loader.h">
+      <Filter>src\ui</Filter>
+    </ClInclude>
+
+    <ClInclude Include="src\win\processutil.h">
+      <Filter>src\win</Filter>
+    </ClInclude>
+
+    <ClInclude Include="src\mem\memory.h">
+      <Filter>src</Filter>
+    </ClInclude>
+
+    <ClInclude Include="ext\stb_image.h">
+      <Filter>ext</Filter>
+    </ClInclude>
+
+    <ClInclude Include="ext\imgui\backends\imgui_impl_dx11.h">
+      <Filter>ext\imgui\backends</Filter>
+    </ClInclude>
+    <ClInclude Include="ext\imgui\backends\imgui_impl_win32.h">
+      <Filter>ext\imgui\backends</Filter>
+    </ClInclude>
+  </ItemGroup>
+
+</Project>
