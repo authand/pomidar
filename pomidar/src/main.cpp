@@ -131,7 +131,7 @@ static bool loadMapTexture(graphics::D3D11State& gfx, graphics::Texture& tex) {
 }
 
 int WINAPI WinMain(HINSTANCE hInstance, HINSTANCE, LPSTR, int) {
-    // Load config (creates default if missing)
+    // load config
     if (!config::load()) {
         config::createDefault();
         config::load();
