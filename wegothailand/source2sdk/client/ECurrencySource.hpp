@@ -1,0 +1,66 @@
+#pragma once
+
+#include "source2sdk/source2gen/source2gen.hpp"
+#include <cstddef>
+#include <cstdint>
+
+// /////////////////////////////////////////////////////////////
+// Module: client
+// Created using source2gen - github.com/neverlosecc/source2gen
+// /////////////////////////////////////////////////////////////
+
+namespace source2sdk
+{
+    namespace client
+    {
+        // Enumerator count: 43
+        // Alignment: 4
+        // Size: 0x4
+        enum class ECurrencySource : std::uint32_t
+        {
+            EInvalidDesc = 0xffffffff,
+            EItemPurchase = 0x0,
+            EItemUpgrade = 0x1,
+            EItemSale = 0x2,
+            ETreasureChest = 0x3,
+            EAbilityPurchase = 0x4,
+            EStartingAmount = 0x5,
+            ELevelUp = 0x6,
+            ECheats = 0x7,
+            EResetDeathPenalty = 0x8,
+            EDroppedOnDeath = 0x9,
+            EHeroSwap = 0xa,
+            EPlayerKill = 0xb,
+            EPlayerKillAssist = 0xc,
+            EBossKill = 0xd,
+            ELaneTrooperKill = 0xe,
+            ENeutralTrooperKill = 0xf,
+            ENeutralBossKill = 0x10,
+            EBaseSentryKill = 0x11,
+            EDeniedFromEnemy = 0x12,
+            EAssassinatePlayerKill = 0x13,
+            EItemTrophyCollector = 0x14,
+            EItemCultistSacrifice = 0x15,
+            EOrbPlayer = 0x16,
+            EOrbDeny = 0x17,
+            EOrbLaneTrooper = 0x18,
+            EOrbNeutralTrooper = 0x19,
+            EOrbTier1TrooperBoss = 0x1a,
+            EOrbTier2TrooperBoss = 0x1b,
+            EOrbBaseGuardians = 0x1c,
+            EOrbShrines = 0x1d,
+            EOrbTier3TrooperBoss = 0x1e,
+            EOrbBaseSentry = 0x1f,
+            EOrbDeployable = 0x20,
+            EOrbTrophyKill = 0x21,
+            EOrbTreasureChest = 0x22,
+            EOrbSiegeTrooper = 0x23,
+            EOrbSpawner = 0x24,
+            ENeutralWorldPickup = 0x25,
+            EBreakablePickup = 0x26,
+            EPlayerKillComeback = 0x27,
+            ETeamBonus = 0x28,
+            ECurrencySourceCount = 0x29,
+        };
+    };
+};

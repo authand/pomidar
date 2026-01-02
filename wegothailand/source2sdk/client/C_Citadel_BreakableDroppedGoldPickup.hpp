@@ -1,0 +1,33 @@
+#pragma once
+
+#include "source2sdk/source2gen/source2gen.hpp"
+#include <cstddef>
+#include <cstdint>
+#include "source2sdk/client/C_Citadel_BreakablePropPickup.hpp"
+
+// /////////////////////////////////////////////////////////////
+// Module: client
+// Created using source2gen - github.com/neverlosecc/source2gen
+// /////////////////////////////////////////////////////////////
+
+namespace source2sdk
+{
+    namespace client
+    {
+        // Registered alignment: 0x8
+        // Alignment: 0x8
+        // Standard-layout class: false
+        // Size: 0xde8
+        // Has VTable
+        #pragma pack(push, 1)
+        class C_Citadel_BreakableDroppedGoldPickup : public source2sdk::client::C_Citadel_BreakablePropPickup
+        {
+        public:
+            // No schema binary for binding
+        };
+        #pragma pack(pop)
+        
+        
+        static_assert(sizeof(source2sdk::client::C_Citadel_BreakableDroppedGoldPickup) == 0xde8);
+    };
+};

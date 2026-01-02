@@ -1,0 +1,52 @@
+#pragma once
+
+#include "source2sdk/source2gen/source2gen.hpp"
+#include <cstddef>
+#include <cstdint>
+#include "source2sdk/server/CAI_CitadelNPC_GraphController.hpp"
+
+// /////////////////////////////////////////////////////////////
+// Module: server
+// Created using source2gen - github.com/neverlosecc/source2gen
+// /////////////////////////////////////////////////////////////
+
+namespace source2sdk
+{
+    namespace server
+    {
+        // Registered alignment: unknown
+        // Alignment: 0x8
+        // Standard-layout class: false
+        // Size: 0x1140
+        // Has VTable
+        #pragma pack(push, 1)
+        class CNPC_Boss_Tier2_GraphController : public source2sdk::server::CAI_CitadelNPC_GraphController
+        {
+        public:
+            // m_pszActivity has a template type with potentially unknown template parameters. You can try uncommenting the field below.
+            // CAnimGraphParamRef<char*> m_pszActivity;
+            char m_pszActivity[0x28]; // 0x1030            
+            // m_pszStompAttack has a template type with potentially unknown template parameters. You can try uncommenting the field below.
+            // CAnimGraphParamRef<char*> m_pszStompAttack;
+            char m_pszStompAttack[0x28]; // 0x1058            
+            // m_pszStaggerDirection has a template type with potentially unknown template parameters. You can try uncommenting the field below.
+            // CAnimGraphParamRef<char*> m_pszStaggerDirection;
+            char m_pszStaggerDirection[0x28]; // 0x1080            
+            // m_pszElectricBeamPosition has a template type with potentially unknown template parameters. You can try uncommenting the field below.
+            // CAnimGraphParamRef<char*> m_pszElectricBeamPosition;
+            char m_pszElectricBeamPosition[0x28]; // 0x10a8            
+            // m_bStunEnding has a template type with potentially unknown template parameters. You can try uncommenting the field below.
+            // CAnimGraphParamRef<bool> m_bStunEnding;
+            char m_bStunEnding[0x20]; // 0x10d0            
+            CAnimGraphTagRef m_sStaggered; // 0x10f0            
+            CAnimGraphTagRef m_sStomp; // 0x1108            
+            uint8_t _pad1120[0x8]; // 0x1120
+            CAnimGraphTagRef m_sApplyStompDamage; // 0x1128            
+        };
+        #pragma pack(pop)
+        
+        // Cannot assert offsets of fields in CNPC_Boss_Tier2_GraphController because it is not a standard-layout class
+        
+        static_assert(sizeof(source2sdk::server::CNPC_Boss_Tier2_GraphController) == 0x1140);
+    };
+};

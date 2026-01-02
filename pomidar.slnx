@@ -1,0 +1,9 @@
+<Solution>
+  <Configurations>
+    <Platform Name="x64" />
+    <Platform Name="x86" />
+  </Configurations>
+  <Project Path="wegothailand/wegothailand.vcxproj" Id="507d5b37-cb8d-4789-9756-f2828beba00a">
+    <BuildType Solution="Release|x64" Project="Server" />
+  </Project>
+</Solution>
